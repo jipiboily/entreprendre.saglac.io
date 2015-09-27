@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html data-wf-site="56004107f142abc30e0bbc8a" data-wf-page="56004107f142abc30e0bbc8d">
+{% include head.html %}
 
-  {% include head.html %}
+<body>
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
 
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
 </html>

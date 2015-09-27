@@ -1,23 +1,55 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="w-section banner-section" data-ix="show-nav">
+  <div class="w-slider main-slider" id="accueil" data-animation="outin" data-duration="500" data-infinite="1" data-delay="4000" data-autoplay="1">
+    <div class="w-slider-mask">
+      <div class="w-slide">
+        <div class="w-container containner-slide">
+          <h1 class="hero-heading" data-ix="hero-heading">PROCHAIN ÉVÉNEMENT</h1>
+          <h1 class="hero-subheader" data-ix="hero-subheader">MARDI LE 27 octobre 2015 . ALMA . 18 H 00</h1><a class="button" href="https://www.facebook.com/groups/entreprendresaglac/events/" data-ix="button">apprenez-en plus</a>
+        </div>
+      </div>
+      <div class="w-slide">
+        <div class="w-container containner-slide">
+          <h1 class="hero-heading" data-ix="hero-heading">ICI, NOUS AVONS<br>15,000 ENTREPRENEURS</h1>
+          <h1 class="hero-subheader" data-ix="hero-subheader">LE SAGUENAY-LAC-SAINT-JEAN COMPTE POUR PLUS DE 12% DU PIB DU QUÉBEC.</h1>
+        </div>
+      </div>
+    </div>
+    <div class="w-slider-arrow-left">
+      <div class="w-icon-slider-left arrow left" data-ix="arrow-left"></div>
+    </div>
+    <div class="w-slider-arrow-right">
+      <div class="w-icon-slider-right arrow right" data-ix="arrow-right"></div>
+    </div>
+    <div class="w-slider-nav w-round slidenav"></div>
+  </div>
+</div>
+<div class="w-section section about" id="quoi">
+  <div class="w-container">
+    <div class="w-row">
+      <div class="w-col w-col-6">
+        <div class="about-us-div">
+          <h5>PARTAGEZ VOTRE SAVOIR ET</h5>
+          <h2 class="section-title">APPRENEZ DES AUTRES et AIDEZ LES AUTRES À Entreprendre ICI aussi.</h2>
+          <p><strong><em class="emphasized-text">L'événement Entreprendre SagLac ce veut simple et rassembleur pour les entrepreneurs du Saguenay–Lac-Saint-Jean. Tous les suggestions de sujets sont les bienvenues.</em></strong>
+          </p><a class="button" href="#">Soumettez votre sujet</a>
+        </div>
+      </div>
+      <div class="w-col w-col-6"></div>
+    </div>
+  </div>
+</div>
+<div class="w-section contact-us-section" id="contact">
+  <h5>COMMENT NOUS TROUVER?</h5>
+  <h2 class="section-title">Groupe Facebook</h2>
+  <h5>
+    <a class="button" href="https://www.facebook.com/groups/entreprendresaglac/">Joignez vous à la discussion sur Facebook!</a>
+  </h5>
+  <br>
+  <h2 class="section-title">COURRIEL</h2>
+  <h5>
+    <a class="button" href="mailto:info@saglac.io">info@saglac.io</a>
+  </h5>
 </div>
